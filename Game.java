@@ -1,3 +1,5 @@
+import java.util.Collections;
+
 public class Game {
     protected GameBoard board;
     protected Team team1;
@@ -40,6 +42,21 @@ public class Game {
         }
         else {
             return team2;
+        }
+    }
+    public boolean isTurn(Team s){
+        if(s.getTeamColor().equals(turn)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public void changeTurn(){
+        if(team1.getTeamColor().equals(turn)){
+            turn = team2.getTeamColor();
+        }else{
+            turn = team1.getTeamColor();
         }
     }
 

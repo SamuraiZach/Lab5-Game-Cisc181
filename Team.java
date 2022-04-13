@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class Team {
     protected String teamColor;
     protected ArrayList<Piece> teamPieces;
@@ -21,13 +22,17 @@ public class Team {
 
     public void addPieceToTeam(Piece pieceBeingAdded) {
         teamPieces.add(pieceBeingAdded);
-        teamPieces.addPiece.getColor() = this.teamColor;
+        for(Piece piece : teamPieces){
+            if(piece == pieceBeingAdded){
+                piece.teamColor = getTeamColor();
+            }
+        }
     }
 
     @Override
     public String toString() {
         String string = "Team " + this.teamColor + " Pieces:\n";
-        for (piece : teamPieces) {
+        for (Piece piece : teamPieces) {
             string += piece.toString() + " ";
         }
         return string;

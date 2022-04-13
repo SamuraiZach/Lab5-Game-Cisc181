@@ -19,6 +19,10 @@ public class GameBoard {
     public BoardSquare[][] getSpaces(){
         return this.spaces;
     }
+
+    public BoardSquare[][] getSquares(){
+        return spaces;
+    }
     public boolean inBounds(int rowIndex, int columnIndex){
         if (rowIndex > this.numRows-1 || columnIndex > this.numColumns-1){
             return false;
@@ -68,10 +72,10 @@ public class GameBoard {
     @Override
     public String toString(){
         StringBuilder boardString = new StringBuilder();
-        boardString.append("Col :     ");
+        boardString.append("Col :       ");
 
         for(int col = 0; col < spaces[0].length; col++){
-            boardString.append(col + "       ");
+            boardString.append(col + "        ");
         }
         boardString.append("\n");
         for(int row = 0; row < spaces.length; row++){

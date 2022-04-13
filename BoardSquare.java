@@ -1,12 +1,11 @@
 public class BoardSquare {
 
     private boolean isSpaceEmpty;
-    private Piece piece=new Piece();
+    private Piece piece;
     private String color;
     public BoardSquare(String color) {
         super();
         this.isSpaceEmpty =true;
-        this.piece.setName(null);
         this.color = color;
     }
 
@@ -25,14 +24,14 @@ public class BoardSquare {
     }
     public Piece removePiece() {
         Piece tmp=this.piece;
-        this.piece.setName(null);
+        this.piece = null;
         this.isSpaceEmpty=true;
         return tmp;
     }
 
     @Override
     public String toString() {
-        if(this.piece.getName()==null) {
+        if(this.piece==null) {
             return "-------";
         }
         else return "-"+this.piece.toString()+"-";

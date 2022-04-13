@@ -18,7 +18,7 @@ public abstract class Piece {
     public abstract void setHidden(boolean h);
     public abstract void setOriginal(boolean o);
     public abstract boolean canSpawn();
-    @Override
+    public abstract Piece spawn();
     public String toString() {
         return (teamColor+" "+symbol);
     }
