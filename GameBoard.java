@@ -1,3 +1,17 @@
+/**
+ * <h1>Lab5</h1>
+ *
+ * <h2>CISC 181-40L Spring 2022</h2>
+ *
+ * <h3>University of Delaware</h3>
+ *
+ * <p>
+ * // generates the two dimension array for the board
+ *
+ * @author Zachariah Barraza, Cam Kennedy, and Victor Tung
+ *
+ * @since (2022-04-13)
+ */
 public class GameBoard {
     private int numRows;
     private int numColumns;

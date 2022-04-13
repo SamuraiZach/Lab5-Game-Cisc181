@@ -1,3 +1,17 @@
+/**
+ * <h1>Lab5</h1>
+ *
+ * <h2>CISC 181-40L Spring 2022</h2>
+ *
+ * <h3>University of Delaware</h3>
+ *
+ * <p>
+ * // the game aspect of the lab
+ *
+ * @author Zachariah Barraza, Cam Kennedy, and Victor Tung
+ *
+ * @since (2022-04-13)
+ */
 import java.util.Collections;
 
 public class Game {
